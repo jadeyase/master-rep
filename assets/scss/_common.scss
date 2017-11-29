@@ -1,0 +1,167 @@
+body{
+	font-family:$opensans;
+}
+h1, h2, h3, h4{
+	text-transform:$heading-text-transform;
+	margin:0;
+}
+h1{
+	font-family:$bitter;
+	color:$green;
+	font-size:138px;
+}
+h2{
+	font-family:$bitter;
+	font-size:40px;
+	color:$base-color;	
+}
+h3{
+	font-family:$bitter;
+	font-size:24px;
+	color:$base-color;
+	text-transform:none;
+}
+h4{
+	font-family:$opensans;
+	font-size:16px;
+	color:$base-color;
+	text-transform:none;
+	font-weight:bold;
+}
+hr {
+border: 0;
+position: relative;
+padding: 0;
+margin: 0 0 20px;
+display: block;
+height: 15px;
+	&:before {
+	position:absolute;
+	left:0;
+	top:0;
+	content:'********************************************************************************************************
+****************************************************
+';
+	width:100%;
+	height:15px;
+	}
+}
+p{
+	line-height:200%;
+	font-family:$opensans;
+	font-size:16px;
+	color:$base-color;
+	padding:0 0 15px;
+}
+a{
+	font-family:$bitter;
+	color:$green;
+	&:hover, &:focus, &:active{
+		background:none;
+		text-decoration:underline;
+	}
+}
+img{
+	max-width:100%;
+}
+.navbar{
+	background: -moz-linear-gradient(90deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(104,126,55,1)), color-stop(100%, rgba(34,66,18,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(90deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(90deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(90deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* ie10+ */
+	background: linear-gradient(0deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#687e37', endColorstr='#224212',GradientType=0 ); /* ie6-9 */
+	margin:0;	
+	@media screen and (max-width: 768px){
+		border-color:transparent;
+	}
+	.nav{
+		li{
+			padding:10px 0;
+			margin-left:98px;
+			font-family:$bitter;
+			color:$white;
+			@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+				margin-left:72px;			
+			}
+			@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+				margin-left:40px;
+			}
+			@media screen and (max-width: 768px){
+				margin-left:0;
+				padding:0 20px;	
+			}
+		}		
+		.fahome, .fabook, .faauthor, .faorder, .fablog, .facontact{
+			a{
+				color:$white;
+				&:before{
+					font-family:FontAwesome;
+					position:absolute;
+					left:-8px;
+					top:14px;
+					font-size:19px;	
+					@media screen and (max-width:768px){
+						top:10px;
+					}				
+				}
+				&:hover{
+					color:$yellow !important;
+				}							
+			}
+
+			@media(max-width:768px){
+				&:hover{background: $green; color:#fff;}
+				&:focus{color:#fff !important;}
+			}
+		}
+		.fahome{a{&:before{content:'\f015';}}}
+		.fabook{a{&:before{content:'\f02d';}}}
+		.faauthor{a{&:before{content:'\f007';}}}
+		.faorder{a{&:before{content:'\f07a';}}}
+		.fablog{a{&:before{content:'\f15b';}}}
+		.facontact{a{&:before{content:'\f0e0';}}}
+	}
+	.navbar-toggle{			
+		border-color:$green;;		
+		&:hover{
+			background-color:$green;
+		}
+		span{
+			background-color:$yellow !important;							
+		}
+	}	
+}
+.navbar-inverse .navbar-nav > li > a:focus{
+	color:$yellow;
+}
+.navbar-inverse{
+	border-color:$white;
+}
+footer{
+	.copyright{
+		padding:15px 0 10px;
+		p{
+			font-size:14px;
+			display:inline-block;
+			color:$base-color;	
+			padding:5px 0 0 0 !important;	
+			span{
+				background:url(../images/litfire-logo.png)no-repeat 0 6px;
+				padding:10px 0 10px 25px;
+
+			}
+			a{
+				font-weight:bold;
+				text-decoration:none;
+				color:$base-color;
+				&:hover{
+					text-decoration:underline;
+				}
+			}
+		}
+	}
+}
+
+

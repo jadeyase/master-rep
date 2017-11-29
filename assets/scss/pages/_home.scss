@@ -1,0 +1,237 @@
+#banner{
+	background:url(../images/banner-bg.jpg)no-repeat center top;
+	background-size:cover;
+	width:100%;
+	padding:190px 0 190px;
+	position:relative;
+	@media screen and (max-width: $screen-xs-max){
+		padding:100px 0 130px;
+	}
+	.text-cont{	
+		position: relative;
+    	left: 40px;	
+		h3{
+			text-align:center;
+			padding: 22px 0 0 0;
+			@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+				font-size:20px;
+			}
+			@media screen and(max-width: $screen-xs-max){
+				padding: 15px 10px 0 0px;
+				font-size:20px;
+			}
+			@media screen and (max-width:480px){
+				font-size:16px;
+			}
+		}
+		@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+			max-width:none;
+			width:500px;
+		}
+		@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+			max-width:none;
+			width:360px;
+		}
+		@media screen and (max-width: $screen-xs-max){
+			left:0;
+			display: block;
+			text-align: center;
+			padding-top: 10px;
+			img{
+			    max-width: none;
+    			width: 340px;
+			}
+		}
+		@media screen and (max-width:480px){
+			img{
+				max-width: none;
+    			width: 260px;
+			}
+		}
+
+	}
+	.img-cont{
+		position: absolute;
+    	left: -50px;
+    	top: -34px;
+    	@media screen and (max-width: $screen-xs-max){
+		    position: relative;
+			left: 0;
+			right:0;
+			top: 0;
+			text-align:center;
+			img{
+				max-width:none;
+				width:340px;
+			}
+		}
+		@media screen and (max-width:480px){
+			img{
+				max-width:none;
+				width:270px;
+			}
+		}			
+    	.wrapper{
+    		position:relative;
+    	}
+    	@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+			max-width:none;
+			width:350px;
+		}
+    	.buy-the-book-btn{    		
+    		a{
+    			position:absolute;
+    			bottom: 12px;
+    			left: 50px;
+    			right: 0px;
+    			margin: 0 auto;
+    			text-align:center;
+				background: -moz-linear-gradient(90deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* ff3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(104,126,55,1)), color-stop(100%, rgba(34,66,18,1))); /* safari4+,chrome */
+				background: -webkit-linear-gradient(90deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* safari5.1+,chrome10+ */
+				background: -o-linear-gradient(90deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* opera 11.10+ */
+				background: -ms-linear-gradient(90deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* ie10+ */
+				background: linear-gradient(0deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* w3c */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#687e37', endColorstr='#224212',GradientType=0 ); /* ie6-9 */
+				height:180px;
+				width:180px;
+				display:inline-block;
+				border-radius:50%;
+				border:6px solid #fff;
+				color:#fff;
+				font-size:24px;
+				font-family:$bitter;
+				font-weight: bold;
+    			padding-top: 40px;
+    			@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+					bottom:0;
+					height: 150px;
+   					width: 150px;
+   					font-size: 18px;
+				}
+				@media screen and (max-width: $screen-xs-max){
+					bottom:0;
+				    height: 150px;
+   					width: 150px;
+   					font-size:20px;
+   					padding-top:36px;
+				}
+				@media screen and (max-width: $screen-xs-max){
+					height:140px;
+					width:140px;
+					font-size:18px;
+					padding-top:32px;
+				}
+				@media screen and (max-width:480px){
+					height:120px;
+					width:120px;
+					font-size:16px;					
+					border:5px solid $white;
+					padding-top:30px;
+				}
+    			&:hover {
+    				background:$green;
+    				text-decoration:none;
+    				color:$yellow;
+    			}
+    			&:focus{
+    				background: -moz-linear-gradient(90deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* ff3.6+ */
+					background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(104,126,55,1)), color-stop(100%, rgba(34,66,18,1))); /* safari4+,chrome */
+					background: -webkit-linear-gradient(90deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* safari5.1+,chrome10+ */
+					background: -o-linear-gradient(90deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* opera 11.10+ */
+					background: -ms-linear-gradient(90deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* ie10+ */
+					background: linear-gradient(0deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* w3c */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#687e37', endColorstr='#224212',GradientType=0 ); /* ie6-9 */
+					text-decoration:none;
+    				color:$white;
+    			}
+    			
+    		}
+			&:before{
+				background: -moz-linear-gradient(90deg, rgba(34,66,18,0.2) 0%, rgba(104,126,55,0.2) 100%); /* ff3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(104,126,55,0.2)), color-stop(100%, rgba(34,66,18,0.2))); /* safari4+,chrome */
+				background: -webkit-linear-gradient(90deg, rgba(34,66,18,0.2) 0%, rgba(104,126,55,0.2) 100%); /* safari5.1+,chrome10+ */
+				background: -o-linear-gradient(90deg, rgba(34,66,18,0.2) 0%, rgba(104,126,55,0.2) 100%); /* opera 11.10+ */
+				background: -ms-linear-gradient(90deg, rgba(34,66,18,0.2) 0%, rgba(104,126,55,0.2) 100%); /* ie10+ */
+				background: linear-gradient(0deg, rgba(34,66,18,0.2) 0%, rgba(104,126,55,0.2) 100%); /* w3c */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#687e37', endColorstr='#224212',GradientType=0 ); /* ie6-9 */
+				content:"";
+				position:absolute;
+				left:170px;
+				right:130px;
+				bottom:12px;
+				height:80px;
+				border-radius:50%;
+				@media screen and (max-width: $screen-xs-max){
+					left:300px;
+					right:250px;
+				}
+			}
+    	}	    	
+	}
+}
+#book-reviews{
+	background:#f5f5f5;
+	border-top:15px solid $green;
+	padding:70px 0 70px;	
+	h2{
+		color:$base-color;
+		font-size:40px;
+		font-family:$bitter;
+		font-weight:bold;
+		padding:0 0 40px;
+		text-align:center;
+		span{
+			color:$green;
+		}
+		@media screen and (max-width:480px){
+			font-size:35px;
+		}
+	}
+	 .wrapper{
+		text-align:center;	
+		background:#f9ffe8;
+		-webkit-box-shadow: -1px 0px 27px -5px rgba(204,204,204,1);
+		-moz-box-shadow: -1px 0px 27px -5px rgba(204,204,204,1);
+		box-shadow: -1px 0px 27px -5px rgba(204,204,204,1);
+		padding:0 25px 50px;
+		position:relative;
+		height: 510px;
+		@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+			height:590px;
+		}
+		@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+			height:660px;
+		}
+		@media screen and (max-width: $screen-xs-max){
+			margin-bottom:50px;
+		}
+		@media screen and (max-width:480px){
+			height:590px;
+		}
+		&:before{
+			content: "";
+			top: 0;
+			height: 110px;
+			left: 0;
+			right: 0;
+			position: absolute;
+			background:$white;
+		}	
+		.inner-wrapper{
+			position:relative;	
+			z-index:10;
+			p{
+				padding:0 0 30px;
+			}
+			img{
+				margin-top:15px;
+			}
+			span{
+			    color: $green;
+    			font-weight: bold;
+    			font-size: 16px;
+			}			
+		}
+	}	
+}

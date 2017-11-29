@@ -1,0 +1,89 @@
+#about-author{
+	padding:70px 0 125px;
+	background:#f5f5f5;
+	@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+		padding:70px 0 70px;
+	}
+	@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+		padding:70px 0 70px;
+	}
+	@media screen and (max-width: $screen-xs-max){
+		padding:70px 0 70px;
+	}
+	.wrapper{
+		background:#f9ffe8;
+		border-top:5px solid $green;
+		text-align:center;
+		height:550px;
+		position:relative;
+		@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+			height:520px;
+		}
+		@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+			height:400px;
+		}
+		@media screen and (max-width: $screen-xs-max){
+			height:520px;
+		}
+		@media screen and (max-width: 480px){
+			height:340px;
+		}
+		.img-cont{
+			position:absolute;
+		    right: 0;
+    		left: 0;
+    		top: 60px;
+    		display: block;
+    		margin: 0 auto;
+    		@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+    			top:50px;
+    			width:350px;
+    		}
+    		@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+    			width:300px;
+    			top:21px;
+    		}
+    		@media screen and (max-width: $screen-xs-max){
+    			width:350px;
+    			top:50px;
+    		}
+    		@media screen and (max-width:480px){
+    			width:240px;
+    			top:25px;
+    		}
+    		img{
+    			border:5px solid #f5f5f5;
+    		}
+		}
+	}
+	.text-cont{
+		position:relative;
+		top:150px;
+		@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+			top:80px;
+		}
+		@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+			top:0;
+		}
+		@media screen and (max-width: $screen-xs-max){
+			top:50px;
+			text-align:center;
+		}
+		h2{
+			padding:0 0 40px;
+			font-weight:bold;
+			@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+				font-size:35px !important;
+			}
+			@media screen and (min-width: $screen-sm-min) and (max-width: $screen-md-max){
+				font-size:35px !important;
+			}
+			@media screen and (max-width: $screen-xs-max){
+				font-size:35px;
+			}
+			span{
+				color:$green;
+			}
+		}
+	}
+}
