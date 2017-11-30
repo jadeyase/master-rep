@@ -92,7 +92,29 @@ img{
 				margin-left:0;
 				padding:0 20px;	
 			}
-		}		
+			&:focus{
+					color:$yellow !important;
+					background:none !important;
+			}
+
+		}
+		.active{
+			a{
+				color:$yellow !important;
+				background:none;
+				&:hover{
+					background:none;
+				}
+				&:focus{
+					color:$yellow !important;
+					background:none !important;	
+				}			
+			}
+			&:focus{
+					color:$yellow !important;
+					background:none !important;
+			}
+		}			
 		.fahome, .fabook, .faauthor, .faorder, .fablog, .facontact{
 			a{
 				color:$white;
@@ -108,13 +130,12 @@ img{
 				}
 				&:hover{
 					color:$yellow !important;
-				}							
+				}										
 			}
-
 			@media(max-width:768px){
 				&:hover{background: $green; color:#fff;}
 				&:focus{color:#fff !important;}
-			}
+			}			
 		}
 		.fahome{a{&:before{content:'\f015';}}}
 		.fabook{a{&:before{content:'\f02d';}}}
@@ -140,22 +161,32 @@ img{
 	border-color:$white;
 }
 footer{
+	background: -moz-linear-gradient(90deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(104,126,55,1)), color-stop(100%, rgba(34,66,18,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(90deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(90deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(90deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* ie10+ */
+	background: linear-gradient(0deg, rgba(34,66,18,1) 0%, rgba(104,126,55,1) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#687e37', endColorstr='#224212',GradientType=0 ); /* ie6-9 */
 	.copyright{
 		padding:15px 0 10px;
+		text-align:center;
 		p{
 			font-size:14px;
 			display:inline-block;
-			color:$base-color;	
-			padding:5px 0 0 0 !important;	
+			color:$white;	
+			padding:5px 0 0 0 !important;
+			@media screen and (max-width:480px){
+				font-size:12px;
+			}	
 			span{
 				background:url(../images/litfire-logo.png)no-repeat 0 6px;
-				padding:10px 0 10px 25px;
-
+				padding:8px 0 10px 25px;
 			}
 			a{
 				font-weight:bold;
 				text-decoration:none;
-				color:$base-color;
+				color:$white;
 				&:hover{
 					text-decoration:underline;
 				}
